@@ -1,0 +1,45 @@
+{
+  "name": "Lawn Blvd Booking",
+  "description": "Lawn Blvd online booking, Stripe Checkout, add-on services and private calendar dashboard.",
+  "repository": "https://github.com/bossybanks/lawn-blvd-booking",
+  "keywords": [
+    "node",
+    "express",
+    "postgresql",
+    "stripe",
+    "booking"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "STRIPE_SECRET_KEY": {
+      "description": "Replacement Stripe secret key. Never use a key exposed in chat.",
+      "required": true
+    },
+    "STRIPE_WEBHOOK_SECRET": {
+      "description": "Stripe webhook signing secret for this Heroku app.",
+      "required": true
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Strong password for the private booking dashboard.",
+      "required": true
+    },
+    "PUBLIC_URL": {
+      "description": "Final HTTPS address, such as https://book.lawnblvd.com",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
