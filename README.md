@@ -1,17 +1,16 @@
-# Lawn Blvd Booking Site
+# Lawn Blvd — Vercel + Acuity
 
-Railway-ready lawn-service booking, Stripe Checkout, add-on services, PostgreSQL appointment storage, and a password-protected booking dashboard.
+This branch contains the Vercel-ready Lawn Blvd booking page.
 
-## Railway setup
+- Vercel hosts the branded public website.
+- Acuity Scheduling handles appointment availability, customer booking, payments, confirmations, and reminders.
+- The scheduler uses owner ID 40226247.
 
-1. Deploy this GitHub repository in Railway.
-2. Add a PostgreSQL service to the same Railway project.
-3. Set `DATABASE_URL=${{Postgres.DATABASE_URL}}` on the app service.
-4. Add secret variables: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, and `ADMIN_PASSWORD`.
-5. Add `PUBLIC_URL` with the complete deployed URL, such as `https://book.lawnblvd.com`.
-6. Add `book.lawnblvd.com` under the app service's **Settings → Networking → Custom Domain**.
-7. In Stripe, create a webhook at `https://book.lawnblvd.com/api/stripe/webhook` for `checkout.session.completed` and `checkout.session.expired`.
+## Deploy on Vercel
 
-The customer page is `/`. The protected booking list is `/admin.html`.
+1. In Vercel, import `bossybanks/lawn-blvd-booking`.
+2. Select the `vercel-acuity` branch.
+3. Vercel reads `vercel.json` and publishes the static site.
+4. Connect a custom domain after the first successful deployment.
 
-Never commit Stripe keys or passwords to the repository.
+No Stripe keys belong in this repository. Connect Stripe inside Acuity.
