@@ -1,1 +1,8 @@
-{"name":"lawn-blvd-booking","version":"1.0.0","type":"module","scripts":{"start":"node server.js"},"dependencies":{"express":"^5.1.0","pg":"^8.16.3","stripe":"^18.5.0"},"engines":{"node":">=20"}}
+{
+  "name": "lawn-blvd-vercel-acuity",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp -R public/. dist/"
+  }
+}
