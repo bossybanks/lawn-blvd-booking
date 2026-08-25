@@ -13,4 +13,6 @@ This branch contains the Vercel-ready Lawn Blvd booking page.
 3. Vercel reads `vercel.json` and publishes the static site.
 4. Connect a custom domain after the first successful deployment.
 
+Production deployment is configured for the `vercel-acuity` branch.
+
 No Stripe keys belong in this repository. Connect Stripe inside Acuity.
