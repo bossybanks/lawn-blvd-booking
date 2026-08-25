@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Your Lawn Blvd lawn care appointment is confirmed.">
+  <title>Booking Confirmed | Lawn Blvd</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .thank-you{min-height:calc(100vh - 128px);display:grid;place-items:center;padding:48px 20px;background:linear-gradient(135deg,#124526,#1a6a3a)}
+    .thank-card{width:min(660px,100%);padding:48px 38px;text-align:center;background:#fff;border-radius:20px;box-shadow:0 22px 65px rgba(0,0,0,.22)}
+    .check{width:76px;height:76px;margin:0 auto 22px;display:grid;place-items:center;border-radius:50%;background:#ec5597;color:#fff;font-size:38px;font-weight:900}
+    .thank-card .eyebrow{color:#ec5597}.thank-card h1{margin:10px 0 14px;color:#1a5b34;font-size:clamp(36px,7vw,58px);letter-spacing:-.045em}
+    .thank-card>p:not(.eyebrow){margin:0 auto;color:#647268;max-width:500px;line-height:1.65}
+    .next{margin:28px 0;padding:20px;text-align:left;background:#f3f8f4;border:1px solid #dce8df;border-radius:12px}
+    .next b{display:block;margin-bottom:8px;color:#1a5b34}.next span{display:block;color:#647268;font-size:14px;line-height:1.55}
+    .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+    .actions a{padding:14px 20px;border-radius:9px;font-weight:850}.primary{background:#ec5597;color:#fff}.secondary{border:1px solid #1a5b34;color:#1a5b34}
+    @media(max-width:480px){.thank-card{padding:38px 22px}.actions{display:grid}.actions a{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/"><span>Lawn Blvd</span></a>
+    <a class="phone" href="tel:8555596258"><small>Questions?</small>(855) 559-6258</a>
+  </header>
+  <main class="thank-you">
+    <section class="thank-card">
+      <div class="check" aria-hidden="true">✓</div>
+      <p class="eyebrow">Booking confirmed</p>
+      <h1>Thank you!</h1>
+      <p>Your Lawn Blvd service is reserved. A confirmation with your appointment details has been sent to your email.</p>
+      <div class="next">
+        <b>What happens next?</b>
+        <span>Keep an eye out for your confirmation and reminder messages. Your selected time is an arrival window, and our team will arrive within that window.</span>
+      </div>
+      <div class="actions">
+        <a class="primary" href="/">Return to booking page</a>
+        <a class="secondary" href="tel:8555596258">Call Lawn Blvd</a>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Lawn Blvd · <a href="tel:8555596258">(855) 559-6258</a> · Serving Harris & Waller County</footer>
+</body>
+</html>
